@@ -13,7 +13,7 @@ number.
 - **Definition lists** are made up of a set of terms along with the 
 definitions for each of those terms.  
 
-![lists](img/lists.png)
+![lists](img/lists.png)  
 
 ## Boxes
 - By default a box is sized just big 
