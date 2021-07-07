@@ -35,6 +35,7 @@ if (ask === 'yes' || ask === 'y') {
   question1();
 
 
+function question2() {
   let Q2 = prompt(' is Duct Tape Attire Scholarships the most valuable? ');
 
 
@@ -52,7 +53,9 @@ if (ask === 'yes' || ask === 'y') {
     alert('inavalid input');
   }
 
+}
 
+question2();
 
   let Q3 = prompt(' europe is the best place to apply for scholerships? ');
   Q3 = Q3.toLowerCase();
