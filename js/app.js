@@ -35,44 +35,49 @@ if (ask === 'yes' || ask === 'y') {
   question1();
 
 
-function question2() {
-  let Q2 = prompt(' is Duct Tape Attire Scholarships the most valuable? ');
+  // eslint-disable-next-line no-inner-declarations
+  function question2() {
+    let Q2 = prompt(' is Duct Tape Attire Scholarships the most valuable? ');
 
 
-  Q2 = Q2.toLowerCase();
+    Q2 = Q2.toLowerCase();
 
-  //   console.log(Q2);
-  if (Q2 === 'yes' || Q2 === 'y') {
-    alert('Exactly');
-    score++;
-  }
-  else if (Q2 === 'no' || Q2 === 'n') {
-    alert('there are more valuable scholerships :)');
-  }
-  else {
-    alert('inavalid input');
-  }
-
-}
-
-question2();
-
-  let Q3 = prompt(' europe is the best place to apply for scholerships? ');
-  Q3 = Q3.toLowerCase();
-
-  //   console.log(Q3);
-  if (Q3 === 'yes' || Q3 === 'y') {
-    alert('YEAH!');
-    score++;
-  }
-  else if (Q3 === 'no' || Q3 === 'n') {
-
-    alert('i will check that later ');
-  }
-  else {
-    alert('inavalid input');
+    //   console.log(Q2);
+    if (Q2 === 'yes' || Q2 === 'y') {
+      alert('Exactly');
+      score++;
+    }
+    else if (Q2 === 'no' || Q2 === 'n') {
+      alert('there are more valuable scholerships :)');
+    }
+    else {
+      alert('inavalid input');
+    }
 
   }
+
+  question2();
+
+  // eslint-disable-next-line no-inner-declarations
+  function question3() {
+    let Q3 = prompt(' europe is the best place to apply for scholerships? ');
+    Q3 = Q3.toLowerCase();
+
+    //   console.log(Q3);
+    if (Q3 === 'yes' || Q3 === 'y') {
+      alert('YEAH!');
+      score++;
+    }
+    else if (Q3 === 'no' || Q3 === 'n') {
+
+      alert('i will check that later ');
+    }
+    else {
+      alert('inavalid input');
+
+    }
+  }
+  question3();
 
   let Q4 = prompt(' Arab countries are lack of scholerships? ');
   Q4 = Q4.toLowerCase();
