@@ -79,21 +79,25 @@ if (ask === 'yes' || ask === 'y') {
   }
   question3();
 
-  let Q4 = prompt(' Arab countries are lack of scholerships? ');
-  Q4 = Q4.toLowerCase();
 
-  //   console.log(Q4);
-  if (Q4 === 'yes' || Q4 === 'y') {
-    alert('i think that too');
-    score++;
-  }
-  else if (Q4 === 'no' || Q4 === 'n') {
-    alert('Really!!!');
-  }
-  else {
-    alert('inavalid input');
-  }
+  // eslint-disable-next-line no-inner-declarations
+  function question4() {
+    let Q4 = prompt(' Arab countries are lack of scholerships? ');
+    Q4 = Q4.toLowerCase();
 
+    //   console.log(Q4);
+    if (Q4 === 'yes' || Q4 === 'y') {
+      alert('i think that too');
+      score++;
+    }
+    else if (Q4 === 'no' || Q4 === 'n') {
+      alert('Really!!!');
+    }
+    else {
+      alert('inavalid input');
+    }
+  }
+  question4();
 
   let Q5 = prompt(' you\'ve been applied for a scholership before? ');
   Q5 = Q5.toLowerCase();
