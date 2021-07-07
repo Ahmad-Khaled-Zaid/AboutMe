@@ -1,3 +1,4 @@
+/* eslint-disable no-inner-declarations */
 'use strict';
 let score = 0;
 
@@ -118,34 +119,37 @@ if (ask === 'yes' || ask === 'y') {
   }
   question5();
 
-  let guessed = false;
+  function question6() {
+    let guessed = false;
 
-  for (let i = 0; i <= 3; i++) {
-    let Q6 = prompt('guess a number between 0 and 25, you just have 4 attemps');
-    // console.log(Q6);
+    for (let i = 0; i <= 3; i++) {
+      let Q6 = prompt('guess a number between 0 and 25, you just have 4 attemps');
+      // console.log(Q6);
 
-    Q6 = parseInt(Q6);
-    if (Q6 === 13) {
-      alert('Amazing, your guess is correct!');
-      score++;
-      guessed = true;
-      break;
+      Q6 = parseInt(Q6);
+      if (Q6 === 13) {
+        alert('Amazing, your guess is correct!');
+        score++;
+        guessed = true;
+        break;
+      }
+
+      else if (Q6 > 13) {
+
+        alert('too high');
+      }
+      else if (Q6 < 13) {
+
+        alert('too low');
+      }
+
     }
-
-    else if (Q6 > 13) {
-
-      alert('too high');
-    }
-    else if (Q6 < 13) {
-
-      alert('too low');
+    if (guessed === false) {
+      alert('the correct number is 13');
     }
 
   }
-  if (guessed === false) {
-    alert('the correct number is 13');
-  }
-
+  question6();
 
 
   let Universities = ['massachusetts', 'oxford', 'stanford', 'harvard'];
