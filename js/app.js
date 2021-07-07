@@ -99,20 +99,24 @@ if (ask === 'yes' || ask === 'y') {
   }
   question4();
 
-  let Q5 = prompt(' you\'ve been applied for a scholership before? ');
-  Q5 = Q5.toLowerCase();
+  // eslint-disable-next-line no-inner-declarations
+  function question5() {
+    let Q5 = prompt(' you\'ve been applied for a scholership before? ');
+    Q5 = Q5.toLowerCase();
 
-  //   console.log(Q5);
-  if (Q5 === 'yes' || Q5 === 'y') {
-    alert('cool!');
-    score++;
+    //   console.log(Q5);
+    if (Q5 === 'yes' || Q5 === 'y') {
+      alert('cool!');
+      score++;
+    }
+    else if (Q5 === 'no' || Q5 === 'n') {
+      alert('give your self a try');
+    }
+    else {
+      alert('inavalid input');
+    }
   }
-  else if (Q5 === 'no' || Q5 === 'n') {
-    alert('give your self a try');
-  }
-  else {
-    alert('inavalid input');
-  }
+  question5();
 
   let guessed = false;
 
