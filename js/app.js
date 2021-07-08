@@ -4,7 +4,7 @@ let score = 0;
 
 let getname = prompt('welcome to our website, may i have your name please?');
 alert('nice to see you here ' + getname);
-// console.log(getname);
+// console.log(getname); 
 
 let ask = prompt('we want to take your opinion in scholerships ' + getname + ' ,if you accept to answer Press y,yes otherwise press n,no ');
 ask = ask.toLowerCase();
