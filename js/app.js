@@ -1,10 +1,9 @@
-/* eslint-disable no-inner-declarations */
 'use strict';
 let score = 0;
 
 let getname = prompt('welcome to our website, may i have your name please?');
 alert('nice to see you here ' + getname);
-// console.log(getname); 
+
 
 let ask = prompt('we want to take your opinion in scholerships ' + getname + ' ,if you accept to answer Press y,yes otherwise press n,no ');
 ask = ask.toLowerCase();
@@ -23,11 +22,10 @@ else {
 }
 
 
-// eslint-disable-next-line no-inner-declarations
 function question1() {
   let Q1 = prompt('is Peterson’s platform better than fast web?');
   Q1 = Q1.toLowerCase();
-  //   console.log(Q1);
+  
 
   if (Q1 === 'yes' || Q1 === 'y') {
     alert('good suggestion');
@@ -45,14 +43,12 @@ function question1() {
 question1();
 
 
-// eslint-disable-next-line no-inner-declarations
 function question2() {
   let Q2 = prompt(' is Duct Tape Attire Scholarships the most valuable? ');
 
 
   Q2 = Q2.toLowerCase();
 
-  //   console.log(Q2);
   if (Q2 === 'yes' || Q2 === 'y') {
     alert('Exactly');
     score++;
@@ -68,12 +64,10 @@ function question2() {
 
 question2();
 
-// eslint-disable-next-line no-inner-declarations
 function question3() {
   let Q3 = prompt(' europe is the best place to apply for scholerships? ');
   Q3 = Q3.toLowerCase();
 
-  //   console.log(Q3);
   if (Q3 === 'yes' || Q3 === 'y') {
     alert('YEAH!');
     score++;
@@ -90,12 +84,10 @@ function question3() {
 question3();
 
 
-// eslint-disable-next-line no-inner-declarations
 function question4() {
   let Q4 = prompt(' Arab countries are lack of scholerships? ');
   Q4 = Q4.toLowerCase();
 
-  //   console.log(Q4);
   if (Q4 === 'yes' || Q4 === 'y') {
     alert('i think that too');
     score++;
@@ -109,12 +101,10 @@ function question4() {
 }
 question4();
 
-// eslint-disable-next-line no-inner-declarations
 function question5() {
   let Q5 = prompt(' you\'ve been applied for a scholership before? ');
   Q5 = Q5.toLowerCase();
 
-  //   console.log(Q5);
   if (Q5 === 'yes' || Q5 === 'y') {
     alert('cool!');
     score++;
@@ -133,7 +123,6 @@ function question6() {
 
   for (let i = 0; i <= 3; i++) {
     let Q6 = prompt('guess a number between 0 and 25, you just have 4 attemps');
-    // console.log(Q6);
 
     Q6 = parseInt(Q6);
     if (Q6 === 13) {
@@ -167,7 +156,6 @@ function question7() {
   for (let i = 0; i <= 5; i++) {
     let Q7 = prompt('guess one of the top Universities in the world ?');
     Q7 = Q7.toLowerCase();
-    // console.log(Q7);
 
 
     for (let j = 0; j < Universities.length; j++) {
