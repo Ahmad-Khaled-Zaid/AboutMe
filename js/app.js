@@ -25,7 +25,7 @@ else {
 function question1() {
   let Q1 = prompt('is Peterson’s platform better than fast web?');
   Q1 = Q1.toLowerCase();
-  
+
 
   if (Q1 === 'yes' || Q1 === 'y') {
     alert('good suggestion');
